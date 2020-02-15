@@ -1,0 +1,1224 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="API Documentation for team 17's project">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.2">
+    
+    
+      
+        <title>Questionnaire API - Hospital survey back-end documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.adb8469c.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#7e57c2">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.86422ebf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#questionnaire-api" tabindex="0" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Hospital survey back-end documentation" aria-label="Hospital survey back-end documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon">memory</i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Hospital survey back-end documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Questionnaire API
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="Hospital survey back-end documentation" class="md-nav__button md-logo">
+      
+        <i class="md-icon">memory</i>
+      
+    </a>
+    Hospital survey back-end documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Welcome" class="md-nav__link">
+      Welcome
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Questionnaire API
+      </label>
+    
+    <a href="./" title="Questionnaire API" class="md-nav__link md-nav__link--active">
+      Questionnaire API
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#get-add-edit-and-delete-questionniares" class="md-nav__link">
+    Get, add, edit and delete questionniares
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get-apigetquestionnaireslist" class="md-nav__link">
+    GET - api/getQuestionnairesList/
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-apigetallquestionnaires" class="md-nav__link">
+    GET - api/getAllQuestionnaires/
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#questionnaire" class="md-nav__link">
+    questionnaire
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#questionnairecontent" class="md-nav__link">
+    questionnaireContent
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-apigetquestionnairebyuid" class="md-nav__link">
+    GET - api/getQuestionnaireByUid//
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#questionnaire_1" class="md-nav__link">
+    questionnaire
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#questionnairecontent_1" class="md-nav__link">
+    questionnaireContent
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-apiaddquestionnaire" class="md-nav__link">
+    POST - api/addQuestionnaire/
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#questionnaire_2" class="md-nav__link">
+    questionnaire
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-apieditquestionnairebyuid" class="md-nav__link">
+    POST - api/editQuestionnaireByUid/
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#questionnaire_3" class="md-nav__link">
+    questionnaire
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-apideletequestionnairebyuid" class="md-nav__link">
+    GET - api/deleteQuestionnaireByUid/
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Answer-API/" title="Answer API" class="md-nav__link">
+      Answer API
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#get-add-edit-and-delete-questionniares" class="md-nav__link">
+    Get, add, edit and delete questionniares
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get-apigetquestionnaireslist" class="md-nav__link">
+    GET - api/getQuestionnairesList/
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-apigetallquestionnaires" class="md-nav__link">
+    GET - api/getAllQuestionnaires/
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#questionnaire" class="md-nav__link">
+    questionnaire
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#questionnairecontent" class="md-nav__link">
+    questionnaireContent
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-apigetquestionnairebyuid" class="md-nav__link">
+    GET - api/getQuestionnaireByUid//
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#questionnaire_1" class="md-nav__link">
+    questionnaire
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#questionnairecontent_1" class="md-nav__link">
+    questionnaireContent
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-apiaddquestionnaire" class="md-nav__link">
+    POST - api/addQuestionnaire/
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#questionnaire_2" class="md-nav__link">
+    questionnaire
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-apieditquestionnairebyuid" class="md-nav__link">
+    POST - api/editQuestionnaireByUid/
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#questionnaire_3" class="md-nav__link">
+    questionnaire
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-apideletequestionnairebyuid" class="md-nav__link">
+    GET - api/deleteQuestionnaireByUid/
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="questionnaire-api">Questionnaire API<a class="headerlink" href="#questionnaire-api" title="Permanent link">&para;</a></h1>
+<h2 id="get-add-edit-and-delete-questionniares">Get, add, edit and delete questionniares<a class="headerlink" href="#get-add-edit-and-delete-questionniares" title="Permanent link">&para;</a></h2>
+<h3 id="get-apigetquestionnaireslist"><code>GET</code> - api/getQuestionnairesList/<a class="headerlink" href="#get-apigetquestionnaireslist" title="Permanent link">&para;</a></h3>
+<p>Use this request to return titie and uid of all the questonnaire in a list in JSON.</p>
+<!-- !!! warning "Authorization"
+    `none` -->
+
+<p><strong>Query Parameter(s)</strong>:
+None</p>
+<div class="admonition note">
+<p class="admonition-title">Example</p>
+<p><code>api/getQuestionnairesList/</code></p>
+</div>
+<p><strong>Request Body</strong>:
+None</p>
+<hr />
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>A list of json object will be returned</p>
+<p><strong>Status Code</strong>: <code>200 OK</code></p>
+<p><strong>Response Body</strong>:</p>
+<div class="codehilite"><pre><span></span><code><span class="p">[</span>
+  <span class="p">{</span>
+    <span class="nt">&quot;uid&quot;</span><span class="p">:</span> <span class="s2">&quot;4fb2c7cf-e493-4aba-87e5-3f3a3ae920ae&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;New Questionnaire&quot;</span>
+  <span class="p">}</span>
+  <span class="p">{</span>
+    <span class="nt">&quot;uid&quot;</span><span class="p">:</span> <span class="s2">&quot;7asdadqf-skj7-iad1-2qa5-sdkaklp20aef&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;New Questionnaire 2&quot;</span>
+  <span class="p">}</span>
+<span class="p">]</span>
+</code></pre></div>
+
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>uid</code></td>
+<td><code>string</code></td>
+<td>Unique id for each questionnaire</td>
+</tr>
+<tr>
+<td><code>title</code></td>
+<td><code>string</code></td>
+<td>The title for a questionnaire</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition failure">
+<p class="admonition-title">N/A</p>
+</div>
+<h3 id="get-apigetallquestionnaires"><code>GET</code> - api/getAllQuestionnaires/<a class="headerlink" href="#get-apigetallquestionnaires" title="Permanent link">&para;</a></h3>
+<p>Use this request to return all content of all the questonnaire in a list in JSON.</p>
+<!-- !!! warning "Authorization"
+    `none` -->
+
+<p><strong>Query Parameter(s)</strong>:
+None</p>
+<div class="admonition note">
+<p class="admonition-title">Example</p>
+<p><code>api/getQuestionnairesList/</code></p>
+</div>
+<p><strong>Request Body</strong>:
+None</p>
+<hr />
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>The user can be found using the query and have a full profile.</p>
+<p><strong>Status Code</strong>: <code>200 OK</code></p>
+<p><strong>Response Body</strong>:</p>
+<div class="codehilite"><pre><span></span><code><span class="p">[</span>
+  <span class="p">{</span>
+    <span class="nt">&quot;uid&quot;</span><span class="p">:</span> <span class="s2">&quot;4fb2c7cf-e493-4aba-87e5-3f3a3ae920ae&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;New Questionnaire&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;minAge&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="nt">&quot;maxAge&quot;</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span>
+    <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;patientType&quot;</span><span class="p">:</span> <span class="s2">&quot;Inpatient&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;questionnaireContent&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;qid&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;questionText&quot;</span><span class="p">:</span> <span class="s2">&quot;What is your name?&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;answerType&quot;</span><span class="p">:</span> <span class="s2">&quot;Text&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;choices&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+        <span class="p">},</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">]</span>
+</code></pre></div>
+
+<h5 id="questionnaire">questionnaire<a class="headerlink" href="#questionnaire" title="Permanent link">&para;</a></h5>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>uid</code></td>
+<td><code>string</code></td>
+<td>Unique id for each questionnaire</td>
+</tr>
+<tr>
+<td><code>title</code></td>
+<td><code>string</code></td>
+<td>The title for a questionnaire</td>
+</tr>
+<tr>
+<td><code>minAge</code></td>
+<td><code>integer</code></td>
+<td>minimum age for attending the survey</td>
+</tr>
+<tr>
+<td><code>maxAge</code></td>
+<td><code>integer</code></td>
+<td>maximum age for attending the survey</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td><code>string</code></td>
+<td>Description for the questionnaire</td>
+</tr>
+<tr>
+<td><code>patientType</code></td>
+<td><code>string</code></td>
+<td>The type of the patient filling the questionnaire</td>
+</tr>
+<tr>
+<td><code>questionnaireContent</code></td>
+<td><code>foreign key</code></td>
+<td>The content of the questionnaire, include all the questions</td>
+</tr>
+</tbody>
+</table>
+<h5 id="questionnairecontent">questionnaireContent<a class="headerlink" href="#questionnairecontent" title="Permanent link">&para;</a></h5>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>qid</code></td>
+<td><code>string</code></td>
+<td>ordered id for each question</td>
+</tr>
+<tr>
+<td><code>questionText</code></td>
+<td><code>string</code></td>
+<td>The title for a question</td>
+</tr>
+<tr>
+<td><code>answertype</code></td>
+<td><code>string</code></td>
+<td>can be text or choices</td>
+</tr>
+<tr>
+<td><code>choices</code></td>
+<td><code>string</code></td>
+<td>will be all available choices if answer type is multiple-choices</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition failure">
+<p class="admonition-title">N/A</p>
+</div>
+<h3 id="get-apigetquestionnairebyuid"><code>GET</code> - api/getQuestionnaireByUid/<str:id>/<a class="headerlink" href="#get-apigetquestionnairebyuid" title="Permanent link">&para;</a></h3>
+<p>Use this request to return content of the questonnaire specifid by uid provided in JSON.</p>
+<p><strong>Query Parameter(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>uid</code></td>
+<td><code>string</code></td>
+<td>unique id for questionnaire</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Example</p>
+<p><code>api/getQuestionnaireByUid/4fb2c7cf-e493-4aba-87e5-3f3a3ae920ae/</code></p>
+</div>
+<hr />
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>The user can be found using the query and have a full profile.</p>
+<p><strong>Status Code</strong>: <code>200 OK</code></p>
+<p><strong>Response Body</strong>:</p>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;uid&quot;</span><span class="p">:</span> <span class="s2">&quot;4fb2c7cf-e493-4aba-87e5-3f3a3ae920ae&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;New Questionnaire&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;minAge&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+  <span class="nt">&quot;maxAge&quot;</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span>
+  <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;patientType&quot;</span><span class="p">:</span> <span class="s2">&quot;Inpatient&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;questionnaireContent&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;qid&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;questionText&quot;</span><span class="p">:</span> <span class="s2">&quot;What is your name?&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;answerType&quot;</span><span class="p">:</span> <span class="s2">&quot;Text&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;choices&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;qid&quot;</span><span class="p">:</span> <span class="s2">&quot;2&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;questionText&quot;</span><span class="p">:</span> <span class="s2">&quot;How old are you?&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;answerType&quot;</span><span class="p">:</span> <span class="s2">&quot;Text&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;choices&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<h5 id="questionnaire_1">questionnaire<a class="headerlink" href="#questionnaire_1" title="Permanent link">&para;</a></h5>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>uid</code></td>
+<td><code>string</code></td>
+<td>Unique id for each questionnaire</td>
+</tr>
+<tr>
+<td><code>title</code></td>
+<td><code>string</code></td>
+<td>The title for a questionnaire</td>
+</tr>
+<tr>
+<td><code>minAge</code></td>
+<td><code>integer</code></td>
+<td>minimum age for attending the survey</td>
+</tr>
+<tr>
+<td><code>maxAge</code></td>
+<td><code>integer</code></td>
+<td>maximum age for attending the survey</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td><code>string</code></td>
+<td>Description for the questionnaire</td>
+</tr>
+<tr>
+<td><code>patientType</code></td>
+<td><code>string</code></td>
+<td>The type of the patient filling the questionnaire</td>
+</tr>
+<tr>
+<td><code>questionnaireContent</code></td>
+<td><code>foreign key</code></td>
+<td>The content of the questionnaire, include all the questions</td>
+</tr>
+</tbody>
+</table>
+<h5 id="questionnairecontent_1">questionnaireContent<a class="headerlink" href="#questionnairecontent_1" title="Permanent link">&para;</a></h5>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>qid</code></td>
+<td><code>string</code></td>
+<td>ordered id for each question</td>
+</tr>
+<tr>
+<td><code>questionText</code></td>
+<td><code>string</code></td>
+<td>The title for a question</td>
+</tr>
+<tr>
+<td><code>answertype</code></td>
+<td><code>string</code></td>
+<td>can be text or choices</td>
+</tr>
+<tr>
+<td><code>choices</code></td>
+<td><code>string</code></td>
+<td>will be all available choices if answer type is multiple-choices</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition failure">
+<p class="admonition-title">get nothing</p>
+<p><strong>Status Code</strong>: <code>400 Bad Request</code></p>
+<p><strong>Response Body</strong>:</p>
+<p>get nothing</p>
+</div>
+<h3 id="post-apiaddquestionnaire"><code>POST</code> - api/addQuestionnaire/<a class="headerlink" href="#post-apiaddquestionnaire" title="Permanent link">&para;</a></h3>
+<p>Use this request to post a questionnaire to database.</p>
+<p><strong>Query Parameter(s)</strong>:
+None</p>
+<div class="admonition note">
+<p class="admonition-title">Example</p>
+<p><code>api/addQuestionnaire/</code></p>
+</div>
+<p><strong>Request Body</strong>:</p>
+<div class="codehilite"><pre><span></span><code>    <span class="p">{</span>
+      <span class="nt">&quot;uid&quot;</span><span class="p">:</span> <span class="s2">&quot;4fb2c7cf-e493-4aba-87e5-3f3a3ae920ae&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;New Questionnaire&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;minAge&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+      <span class="nt">&quot;maxAge&quot;</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span>
+      <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;patientType&quot;</span><span class="p">:</span> <span class="s2">&quot;Inpatient&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;questionnaireContent&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;qid&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;questionText&quot;</span><span class="p">:</span> <span class="s2">&quot;What is your name?&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;answerType&quot;</span><span class="p">:</span> <span class="s2">&quot;Text&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;choices&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;qid&quot;</span><span class="p">:</span> <span class="s2">&quot;2&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;questionText&quot;</span><span class="p">:</span> <span class="s2">&quot;How old are you?&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;answerType&quot;</span><span class="p">:</span> <span class="s2">&quot;Text&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;choices&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+        <span class="p">}</span>
+      <span class="p">]</span>
+    <span class="p">}</span>
+</code></pre></div>
+
+<h5 id="questionnaire_2">questionnaire<a class="headerlink" href="#questionnaire_2" title="Permanent link">&para;</a></h5>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>uid</code></td>
+<td><code>string</code></td>
+<td>Unique id for each questionnaire</td>
+</tr>
+<tr>
+<td><code>title</code></td>
+<td><code>string</code></td>
+<td>The title for a questionnaire</td>
+</tr>
+<tr>
+<td><code>minAge</code></td>
+<td><code>integer</code></td>
+<td>minimum age for attending the survey</td>
+</tr>
+<tr>
+<td><code>maxAge</code></td>
+<td><code>integer</code></td>
+<td>maximum age for attending the survey</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td><code>string</code></td>
+<td>Description for the questionnaire</td>
+</tr>
+<tr>
+<td><code>patientType</code></td>
+<td><code>string</code></td>
+<td>The type of the patient filling the questionnaire</td>
+</tr>
+<tr>
+<td><code>questionnaireContent</code></td>
+<td><code>foreign key</code></td>
+<td>The content of the questionnaire, include all the questions</td>
+</tr>
+</tbody>
+</table>
+<p>#####questionnaireContent</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>qid</code></td>
+<td><code>string</code></td>
+<td>ordered id for each question</td>
+</tr>
+<tr>
+<td><code>questionText</code></td>
+<td><code>string</code></td>
+<td>The title for a question</td>
+</tr>
+<tr>
+<td><code>answertype</code></td>
+<td><code>string</code></td>
+<td>can be text or choices</td>
+</tr>
+<tr>
+<td><code>choices</code></td>
+<td><code>string</code></td>
+<td>will be all available choices if answer type is multiple-choices</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>a Http response will be returned</p>
+<p><strong>Status Code</strong>: <code>200 OK</code></p>
+<p><strong>Response Body</strong>:</p>
+<p>received</p>
+</div>
+<div class="admonition failure">
+<p class="admonition-title">N/A</p>
+<p><strong>Status Code</strong>: <code>400 Bad Request</code></p>
+<p><strong>Response Body</strong>:</p>
+</div>
+<h3 id="post-apieditquestionnairebyuid"><code>POST</code> - api/editQuestionnaireByUid/<str:id><a class="headerlink" href="#post-apieditquestionnairebyuid" title="Permanent link">&para;</a></h3>
+<p>Use this request to return titie and uid of all the questonnaire in a list in JSON.</p>
+<!-- !!! warning "Authorization"
+    `none` -->
+
+<p><strong>Query Parameter(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>uid</code></td>
+<td><code>string</code></td>
+<td>unique id for questionnaire</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Example</p>
+<p><code>api/editQuestionnaireByUid/4fb2c7cf-e493-4aba-e5-3f3a3ae920ae/</code></p>
+</div>
+<p><strong>Request Body</strong>:</p>
+<div class="codehilite"><pre><span></span><code>    <span class="p">{</span>
+      <span class="nt">&quot;uid&quot;</span><span class="p">:</span> <span class="s2">&quot;4fb2c7cf-e493-4aba-87e5-3f3a3ae920ae&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;New Questionnaire&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;minAge&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+      <span class="nt">&quot;maxAge&quot;</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span>
+      <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;patientType&quot;</span><span class="p">:</span> <span class="s2">&quot;Inpatient&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;questionnaireContent&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;qid&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;questionText&quot;</span><span class="p">:</span> <span class="s2">&quot;What is your name?&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;answerType&quot;</span><span class="p">:</span> <span class="s2">&quot;Text&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;choices&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;qid&quot;</span><span class="p">:</span> <span class="s2">&quot;2&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;questionText&quot;</span><span class="p">:</span> <span class="s2">&quot;How old are you?&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;answerType&quot;</span><span class="p">:</span> <span class="s2">&quot;Text&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;choices&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+        <span class="p">}</span>
+      <span class="p">]</span>
+    <span class="p">}</span>
+</code></pre></div>
+
+<h5 id="questionnaire_3">questionnaire<a class="headerlink" href="#questionnaire_3" title="Permanent link">&para;</a></h5>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>uid</code></td>
+<td><code>string</code></td>
+<td>Unique id for each questionnaire</td>
+</tr>
+<tr>
+<td><code>title</code></td>
+<td><code>string</code></td>
+<td>The title for a questionnaire</td>
+</tr>
+<tr>
+<td><code>minAge</code></td>
+<td><code>integer</code></td>
+<td>minimum age for attending the survey</td>
+</tr>
+<tr>
+<td><code>maxAge</code></td>
+<td><code>integer</code></td>
+<td>maximum age for attending the survey</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td><code>string</code></td>
+<td>Description for the questionnaire</td>
+</tr>
+<tr>
+<td><code>patientType</code></td>
+<td><code>string</code></td>
+<td>The type of the patient filling the questionnaire</td>
+</tr>
+<tr>
+<td><code>questionnaireContent</code></td>
+<td><code>foreign key</code></td>
+<td>The content of the questionnaire, include all the questions</td>
+</tr>
+</tbody>
+</table>
+<p>#####questionnaireContent</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>qid</code></td>
+<td><code>string</code></td>
+<td>ordered id for each question</td>
+</tr>
+<tr>
+<td><code>questionText</code></td>
+<td><code>string</code></td>
+<td>The title for a question</td>
+</tr>
+<tr>
+<td><code>answertype</code></td>
+<td><code>string</code></td>
+<td>can be text or choices</td>
+</tr>
+<tr>
+<td><code>choices</code></td>
+<td><code>string</code></td>
+<td>will be all available choices if answer type is multiple-choices</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>The user can be found using the query and have a full profile.</p>
+<p><strong>Status Code</strong>: <code>200 OK</code></p>
+<p><strong>Response Body</strong>:</p>
+<p>edited</p>
+</div>
+<div class="admonition failure">
+<p class="admonition-title">N/A</p>
+<p><strong>Status Code</strong>: <code>400 Bad Request</code></p>
+<p><strong>Response Body</strong>:</p>
+</div>
+<h3 id="get-apideletequestionnairebyuid"><code>GET</code> - api/deleteQuestionnaireByUid/<str:id><a class="headerlink" href="#get-apideletequestionnairebyuid" title="Permanent link">&para;</a></h3>
+<p><strong>Query Parameter(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>uid</code></td>
+<td><code>string</code></td>
+<td>unique id for questionnaire</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Example</p>
+<p><code>api/deleteQuestionnaireByUid/4fb2c7cf-e493-4aba-87e5-3f3a3ae920ae</code></p>
+</div>
+<p><strong>Request Body</strong>:
+None</p>
+<hr />
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>The questionnaire specified in parameter will be removed from database.</p>
+<p><strong>Status Code</strong>: <code>200 OK</code></p>
+<p><strong>Response Body</strong>:</p>
+<p>deleted</p>
+</div>
+<div class="admonition failure">
+<p class="admonition-title">Questionnaire not exist</p>
+<p><strong>Status Code</strong>: <code>400 Bad Request</code></p>
+<p><strong>Response Body</strong>:</p>
+<p>Questionnaire not exist </p>
+</div>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href=".." title="Welcome" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Welcome
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../Answer-API/" title="Answer API" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Answer API
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.c33a9706.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>
