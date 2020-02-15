@@ -1,0 +1,45 @@
+site_name: Hospital survey back-end documentation
+site_description: API Documentation for team 17's project
+
+theme:
+  name: "material"
+  language: "en"
+  logo:
+    icon: "memory"
+  palette:
+    primary: "deep purple"
+    accent: "deep purple"
+  feature:
+    tabs: false
+
+
+
+
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.def_list
+  - codehilite:
+      guess_lang: false
+  - pymdownx.inlinehilite
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+
+nav:
+  - Welcome: index.md
+  - Questionnaire API: Questionnaire-API.md
+  - Answer API: Answer-API.md
+
+
+# extra_css:
+#   - "stylesheets/style.css"
+
+
